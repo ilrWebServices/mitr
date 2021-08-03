@@ -31,7 +31,8 @@
     "drupal/core-composer-scaffold": "^9.2",
     "drupal/core-project-message": "^9.2",
     "drupal/core-recommended": "^9.2",
-    "drush/drush": "^10.5"
+    "drush/drush": "^10.5",
+    "vlucas/phpdotenv": "4.0"
   },
   "conflict": {
       "drupal/drupal": "*"
@@ -40,6 +41,9 @@
   "prefer-stable": true,
   "config": {
       "sort-packages": true
+  },
+  "autoload": {
+    "files": ["load.environment.php"]
   },
   "extra": {
       "drupal-scaffold": {
