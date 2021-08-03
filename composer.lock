@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "81b10d6cf1a0e002762bdbecf09ae43c",
+    "content-hash": "b44864ea8adce5e86890c7b2b9b2b911",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -1704,6 +1704,162 @@
             "time": "2021-07-20T21:42:48+00:00"
         },
         {
+            "name": "drupal/key",
+            "version": "1.14.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/key.git",
+                "reference": "8.x-1.14"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/key-8.x-1.14.zip",
+                "reference": "8.x-1.14",
+                "shasum": "097cec8e86b1c164727ca62521a06c36459754f1"
+            },
+            "require": {
+                "drupal/core": "^8.7.7 || ^9"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-1.14",
+                    "datestamp": "1591765429",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                },
+                "drush": {
+                    "services": {
+                        "drush.services.yml": "^9"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Cellar Door",
+                    "homepage": "https://www.drupal.org/user/658076"
+                },
+                {
+                    "name": "crashtest_",
+                    "homepage": "https://www.drupal.org/user/261457"
+                },
+                {
+                    "name": "nerdstein",
+                    "homepage": "https://www.drupal.org/user/1557710"
+                },
+                {
+                    "name": "rlhawk",
+                    "homepage": "https://www.drupal.org/user/352283"
+                }
+            ],
+            "description": "Provides the ability to manage site-wide keys",
+            "homepage": "http://drupal.org/project/key",
+            "keywords": [
+                "Drupal"
+            ],
+            "support": {
+                "source": "http://cgit.drupalcode.org/key",
+                "issues": "http://drupal.org/project/key"
+            }
+        },
+        {
+            "name": "drupal/salesforce",
+            "version": "4.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/salesforce.git",
+                "reference": "8.x-4.2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/salesforce-8.x-4.2.zip",
+                "reference": "8.x-4.2",
+                "shasum": "93e8094e9d4c57a0ea9afd9e6bfb2ef18c47d09b"
+            },
+            "require": {
+                "consolidation/output-formatters": "^3.2.0 || ^4.1",
+                "drupal/core": "^8.7.7 || ^9",
+                "ext-json": "*",
+                "lusitanian/oauth": "^0.8.11"
+            },
+            "require-dev": {
+                "drupal/address": "^1.8",
+                "drupal/dynamic_entity_reference": "^1.9 || ^2.0",
+                "drupal/key": "^1.14",
+                "drupal/salesforce_mapping": "*",
+                "drupal/salesforce_push": "*",
+                "drupal/typed_data": "^1.0-alpha5",
+                "drupal/webform": "^5.9.0-beta1",
+                "ext-soap": "*",
+                "firebase/php-jwt": "^5.0",
+                "lusitanian/oauth": "^0.8.11",
+                "messageagency/force.com-toolkit-for-php": "^1.0.1"
+            },
+            "suggest": {
+                "consolidation/output-formatters": "Required for drush 10 commands.",
+                "drupal/address": "Required for salesforce_address",
+                "drupal/dynamic_entity_reference": "Required for salesforce_mapping.",
+                "drupal/key": "Required to use salesforce_jwt, recommended auth provider.",
+                "drupal/typed_data": "Required for salesforce_mapping.",
+                "firebase/php-jwt": "Required for salesforce_jwt, recommended auth provider.",
+                "lusitanian/oauth": "Required for salesforce_jwt, recommended auth provider.",
+                "messageagency/force.com-toolkit-for-php": "Required for salesforce_soap."
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-4.2",
+                    "datestamp": "1616088748",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                },
+                "drush": {
+                    "services": {
+                        "drush.services.yml": "^9"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Aaron Bauman (aaronbauman)",
+                    "homepage": "https://www.drupal.org/u/aaronbauman",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "Alexander Rhodes (ironsizide)",
+                    "homepage": "https://www.drupal.org/u/ironsizide",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "Colin Corrigan",
+                    "homepage": "https://www.drupal.org/u/cwcorrigan",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "mariacha1",
+                    "homepage": "https://www.drupal.org/user/2210776"
+                }
+            ],
+            "description": "Provides Drupal modules to integrate with Salesforce.",
+            "homepage": "https://drupal.org/project/salesforce",
+            "support": {
+                "source": "http://cgit.drupalcode.org/salesforce",
+                "issues": "https://drupal.org/project/issues/salesforce"
+            }
+        },
+        {
             "name": "drush/drush",
             "version": "10.5.0",
             "source": {
@@ -2727,6 +2883,77 @@
                 }
             ],
             "time": "2021-02-22T09:20:06+00:00"
+        },
+        {
+            "name": "lusitanian/oauth",
+            "version": "v0.8.11",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Lusitanian/PHPoAuthLib.git",
+                "reference": "fc11a53db4b66da555a6a11fce294f574a8374f9"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Lusitanian/PHPoAuthLib/zipball/fc11a53db4b66da555a6a11fce294f574a8374f9",
+                "reference": "fc11a53db4b66da555a6a11fce294f574a8374f9",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "3.7.*",
+                "predis/predis": "0.8.*@dev",
+                "squizlabs/php_codesniffer": "2.*",
+                "symfony/http-foundation": "~2.1"
+            },
+            "suggest": {
+                "ext-openssl": "Allows for usage of secure connections with the stream-based HTTP client.",
+                "predis/predis": "Allows using the Redis storage backend.",
+                "symfony/http-foundation": "Allows using the Symfony Session storage backend."
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "0.1-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "OAuth": "src",
+                    "OAuth\\Unit": "tests"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "David Desberg",
+                    "email": "david@daviddesberg.com"
+                },
+                {
+                    "name": "Elliot Chance",
+                    "email": "elliotchance@gmail.com"
+                },
+                {
+                    "name": "Pieter Hordijk",
+                    "email": "info@pieterhordijk.com"
+                }
+            ],
+            "description": "PHP 5.3+ oAuth 1/2 Library",
+            "keywords": [
+                "Authentication",
+                "authorization",
+                "oauth",
+                "security"
+            ],
+            "support": {
+                "issues": "https://github.com/Lusitanian/PHPoAuthLib/issues",
+                "source": "https://github.com/Lusitanian/PHPoAuthLib/tree/master"
+            },
+            "time": "2018-02-14T22:37:14+00:00"
         },
         {
             "name": "masterminds/html5",

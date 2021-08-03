@@ -31,6 +31,8 @@
     "drupal/core-composer-scaffold": "^9.2",
     "drupal/core-project-message": "^9.2",
     "drupal/core-recommended": "^9.2",
+    "drupal/key": "^1.14",
+    "drupal/salesforce": "^4.0",
     "drush/drush": "^10.5",
     "vlucas/phpdotenv": "4.0"
   },

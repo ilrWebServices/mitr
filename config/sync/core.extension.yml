@@ -4,7 +4,10 @@ module:
   dblog: 0
   field: 0
   filter: 0
+  key: 0
   path_alias: 0
+  salesforce: 0
+  salesforce_jwt: 0
   system: 0
   text: 0
   toolbar: 0
