@@ -1,11 +1,13 @@
 module:
   block: 0
+  breakpoint: 0
   dblog: 0
   field: 0
   filter: 0
   path_alias: 0
   system: 0
   text: 0
+  toolbar: 0
   user: 0
   minimal: 1000
 theme:
