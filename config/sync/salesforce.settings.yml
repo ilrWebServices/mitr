@@ -8,6 +8,6 @@ pull_max_queue_size: 100000
 show_all_objects: false
 standalone: false
 limit_mapped_object_revisions: 10
-salesforce_auth_provider: ''
+salesforce_auth_provider: ecornell_jwt_oauth_dev
 _core:
   default_config_hash: EjFTlHhnxj9PlzBk2nJ7rVdK1MdUy67s4U9n84FuMho

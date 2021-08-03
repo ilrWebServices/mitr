@@ -34,6 +34,7 @@
     "drupal/key": "^1.14",
     "drupal/salesforce": "^4.0",
     "drush/drush": "^10.5",
+    "firebase/php-jwt": "^5.0",
     "vlucas/phpdotenv": "4.0"
   },
   "conflict": {

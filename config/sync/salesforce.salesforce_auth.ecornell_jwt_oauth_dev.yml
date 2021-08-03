@@ -1,0 +1,16 @@
+uuid: d24a1266-0236-4fcd-969b-9a9211a874a8
+langcode: en
+status: true
+dependencies:
+  config:
+    - key.key.ecornell_jwt_x509_key
+  module:
+    - salesforce_jwt
+id: ecornell_jwt_oauth_dev
+label: 'eCornell JWT OAuth (Dev)'
+provider: jwt
+provider_settings:
+  consumer_key: 3MVG9gI0ielx8zHLKXlEe15aGYkvkQa.WLHTR17FJS0STbo5RQBlA5LS_BzTOjwd2QaDPNhcYKqZLvXO_H7wc
+  login_user: apionly@ilr.cornell.edu.tiger
+  login_url: 'https://test.salesforce.com'
+  encrypt_key: ecornell_jwt_x509_key
