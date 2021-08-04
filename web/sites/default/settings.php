@@ -89,7 +89,7 @@
  * @endcode
  */
 $databases['default']['default'] = [
-  'database' => getenv('EMHRM_SQLITE_DATABASE'),
+  'database' => '../data/' . getenv('EMHRM_SQLITE_DATABASE'),
   'driver' => 'sqlite',
   'namespace' => 'Drupal\\Core\\Database\\Driver\\sqlite',
   'prefix' => '',
