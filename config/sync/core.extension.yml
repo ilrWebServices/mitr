@@ -11,6 +11,7 @@ module:
   system: 0
   toolbar: 0
   user: 0
+  webhook_logger: 0
   minimal: 1000
 theme:
   seven: 0

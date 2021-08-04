@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "c35b7952d98fd1f40ac9e3a3609e3401",
+    "content-hash": "de3914d666ddad85850acb9425517054",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -1955,6 +1955,35 @@
             "support": {
                 "source": "https://git.drupalcode.org/project/sftp_client"
             }
+        },
+        {
+            "name": "drupal/webhook_logger",
+            "version": "1.x-dev",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ilrWebServices/webhook_logger.git",
+                "reference": "c681d8c9f20a32dd6fc5b85c79a3b1bddfd43c27"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ilrWebServices/webhook_logger/zipball/c681d8c9f20a32dd6fc5b85c79a3b1bddfd43c27",
+                "reference": "c681d8c9f20a32dd6fc5b85c79a3b1bddfd43c27",
+                "shasum": ""
+            },
+            "default-branch": true,
+            "type": "drupal-module",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "description": "Sends Drupal logs to a Slack webhook.",
+            "keywords": [
+                "Drupal"
+            ],
+            "support": {
+                "issues": "https://github.com/ilrWebServices/webhook_logger/issues",
+                "source": "https://github.com/ilrWebServices/webhook_logger.git"
+            },
+            "time": "2021-08-04T20:02:52+00:00"
         },
         {
             "name": "drush/drush",
@@ -7062,7 +7091,9 @@
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": [],
+    "stability-flags": {
+        "drupal/webhook_logger": 20
+    },
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": [],
