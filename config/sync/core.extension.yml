@@ -13,7 +13,6 @@ module:
   user: 0
   minimal: 1000
 theme:
-  stark: 0
   seven: 0
 profile: minimal
 _core:
