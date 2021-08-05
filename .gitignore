@@ -12,6 +12,7 @@
 
 # Ignore Drupal's file directory
 /web/sites/*/files/
+/data/files/
 
 # Ignore Drupal's private file directory
 /private/

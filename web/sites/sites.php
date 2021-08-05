@@ -57,3 +57,21 @@
 
 // Add domain mappings here.
 $sites['emhrm.mitr.test'] = 'emhrm';
+
+$platformsh = new \Platformsh\ConfigReader\Config();
+
+if (!$platformsh->inRuntime()) {
+  return;
+}
+
+// The following block adds a $sites[] entry for each subdomain that is defined
+// in routes.yaml.
+// If you are not using subdomain-based multisite routes then you will need to
+// adapt the code below accordingly.
+foreach ($platformsh->getUpstreamRoutes($platformsh->applicationName) as $route) {
+  $host = parse_url($route['url'], PHP_URL_HOST);
+  if ($host !== FALSE) {
+    $subdomain = substr($host, 0, strpos($host,'.'));
+    $sites[$host] = $subdomain;
+  }
+}

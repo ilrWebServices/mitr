@@ -790,6 +790,11 @@ $settings['entity_update_backup'] = TRUE;
  */
 $settings['migrate_node_migrate_type_classic'] = FALSE;
 
+// Automatic Platform.sh settings.
+if (file_exists($app_root . '/' . $site_path . '/../settings.platformsh.php')) {
+  include $app_root . '/' . $site_path . '/../settings.platformsh.php';
+}
+
 /**
  * Load local development override configuration, if available.
  *
