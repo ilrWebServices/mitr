@@ -32,7 +32,6 @@ $settings['container_yamls'][] = $app_root . '/' . $site_path . '/services.yml';
 // local development.
 // $settings['hash_salt'] = 'change_me';
 
-
 // Set up a config sync directory.
 $settings['config_sync_directory'] = '../config/sync/' . $subsite_id;
 
@@ -41,6 +40,11 @@ $settings['file_public_base_url'] = '/files/' . $subsite_id;
 
 // Set the file path.
 $settings['file_public_path'] = '../data/files/' . $subsite_id;
+
+// Set the slack webhoook URL from an environment variable.
+if (!empty(getenv('SLACK_WEBHOOK_URL'))) {
+  $config['webhook_logger.settings']['slack_webhook_url'] = getenv('SLACK_WEBHOOK_URL');
+}
 
 // Automatic Platform.sh settings.
 $platformsh_subsite_id = $subsite_id;

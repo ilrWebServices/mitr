@@ -1962,12 +1962,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/ilrWebServices/webhook_logger.git",
-                "reference": "c681d8c9f20a32dd6fc5b85c79a3b1bddfd43c27"
+                "reference": "a107ce17ab9ab890749a80d29e3f797eb863037c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ilrWebServices/webhook_logger/zipball/c681d8c9f20a32dd6fc5b85c79a3b1bddfd43c27",
-                "reference": "c681d8c9f20a32dd6fc5b85c79a3b1bddfd43c27",
+                "url": "https://api.github.com/repos/ilrWebServices/webhook_logger/zipball/a107ce17ab9ab890749a80d29e3f797eb863037c",
+                "reference": "a107ce17ab9ab890749a80d29e3f797eb863037c",
                 "shasum": ""
             },
             "default-branch": true,
@@ -1983,7 +1983,7 @@
                 "issues": "https://github.com/ilrWebServices/webhook_logger/issues",
                 "source": "https://github.com/ilrWebServices/webhook_logger.git"
             },
-            "time": "2021-08-04T20:02:52+00:00"
+            "time": "2021-08-05T21:54:59+00:00"
         },
         {
             "name": "drush/drush",

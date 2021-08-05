@@ -1,0 +1,5 @@
+slack_webhook_url: "http://www.example.net/use_env_variable"
+channel_blocklist:
+  - 'page not found'
+  - 'access denied'
+  - 'cron'
