@@ -1,20 +1,14 @@
 sftp:
-  connection_name: collegenet
+  connection_name: ilr_collegenet
   filename_pattern: '/^.*\.csv$/'
   file_max_age_days: 365
-  report_directory: /reports
+  report_directory: /ILR_CRM_Reports
 mapping:
   CRM_ID: CollegeNET_CRM_ID__c
   NAME_FIRST: FirstName
   NAME_LAST: LastName
   EMAIL: Email
   PHONE: Phone
-default_fields:
-  -
-    key: RecordType.Name
-    value: Grad
-  -
-    key: Company
-    value: 'NONE PROVIDED'
+default_fields: []
 _core:
   default_config_hash: NaOg9vT4ZnAVDsF4QPA7QGaO8pUl60cNwY7MB2Gsa14

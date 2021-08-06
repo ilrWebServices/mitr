@@ -41,6 +41,17 @@ $settings['file_public_base_url'] = '/files/' . $subsite_id;
 // Set the file path.
 $settings['file_public_path'] = '../data/files/' . $subsite_id;
 
+/**
+ * Configure sftp servers.
+ */
+$settings['sftp'] = [
+  'ilr_collegenet' => [
+    'server' => 'sftp.applyweb.com',
+    'username' => getenv('ILR_COLLEGENET_SFTP_USER'),
+    'password' => getenv('ILR_COLLEGENET_SFTP_PASSWORD'),
+  ],
+];
+
 // Set the slack webhoook URL from an environment variable.
 if (!empty(getenv('SLACK_WEBHOOK_URL'))) {
   $config['webhook_logger.settings']['slack_webhook_url'] = getenv('SLACK_WEBHOOK_URL');
