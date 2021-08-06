@@ -126,8 +126,16 @@ web:
         '^/files/(css|js)':
           expires: 2w
 
+# Set the timezone for cron jobs.
+timezone: "America/New_York"
+
 crons:
   # Run Drupal's cron tasks every 30 minutes.
   drupal:
-      spec: '*/30 * * * *'
-      cmd: 'cd web ; drush -l emhrm core-cron'
+    spec: '*/30 * * * *'
+    cmd: 'drush -l emhrm core-cron'
+  collegenet-import:
+    # Run EMHRM CollegeNET importer every day at 7:05 and 12:05.
+    spec: '5 7,12 * * *'
+    cmd: 'drush -l emhrm collegenet2sf:run'
+
