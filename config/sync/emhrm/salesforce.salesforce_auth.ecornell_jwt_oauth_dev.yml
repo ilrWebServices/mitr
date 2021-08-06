@@ -10,7 +10,7 @@ id: ecornell_jwt_oauth_dev
 label: 'eCornell JWT OAuth (Dev)'
 provider: jwt
 provider_settings:
-  consumer_key: 3MVG9gI0ielx8zHLKXlEe15aGYkvkQa.WLHTR17FJS0STbo5RQBlA5LS_BzTOjwd2QaDPNhcYKqZLvXO_H7wc
-  login_user: apionly@ilr.cornell.edu.tiger
+  consumer_key: 3MVG9BJjUUIJZf1x73buN58wJ5vagZkBTL.BO8LlTHxpE3iHFRN7BMzDCX2IVHQzKuJ3Zv5LqyQmh7GZYp.PB
+  login_user: ilrapi@ecornell.com.full
   login_url: 'https://test.salesforce.com'
   encrypt_key: ecornell_jwt_x509_key
