@@ -1325,12 +1325,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/ilrWebServices/collegenet2sf.git",
-                "reference": "030676519fe59a2299819ee166d597c28ba03b9b"
+                "reference": "a5bd6aaaf48e5557d758969678879be58622e196"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ilrWebServices/collegenet2sf/zipball/030676519fe59a2299819ee166d597c28ba03b9b",
-                "reference": "030676519fe59a2299819ee166d597c28ba03b9b",
+                "url": "https://api.github.com/repos/ilrWebServices/collegenet2sf/zipball/a5bd6aaaf48e5557d758969678879be58622e196",
+                "reference": "a5bd6aaaf48e5557d758969678879be58622e196",
                 "shasum": ""
             },
             "require": {
@@ -1358,7 +1358,7 @@
                 "source": "https://github.com/ilrWebServices/collegenet2sf/tree/1.x",
                 "issues": "https://github.com/ilrWebServices/collegenet2sf/issues"
             },
-            "time": "2021-08-04T15:31:40+00:00"
+            "time": "2021-08-10T17:43:46+00:00"
         },
         {
             "name": "drupal/core",
