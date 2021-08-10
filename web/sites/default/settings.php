@@ -88,12 +88,7 @@
  * ];
  * @endcode
  */
-$databases['default']['default'] = [
-  'database' => '../data/' . getenv('EMHRM_SQLITE_DATABASE'),
-  'driver' => 'sqlite',
-  'namespace' => 'Drupal\\Core\\Database\\Driver\\sqlite',
-  'prefix' => '',
-];
+$databases = [];
 
 /**
  * Customizing database settings.
