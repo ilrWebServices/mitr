@@ -1,6 +1,6 @@
 sftp:
   connection_name: ilr_collegenet
-  filename_pattern: '/^.*\.csv$/'
+  filename_pattern: '/^3004_Graduate_Application___Prospect_\d+\.csv$/'
   file_max_age_days: 365
   report_directory: /ILR_CRM_Reports
 mapping:
@@ -9,6 +9,22 @@ mapping:
   NAME_LAST: LastName
   EMAIL: Email
   PHONE: Phone
+  CORNELLG-CELL_PHONE_FULL: MobilePhone
+  CORNELLG-CELL_PHONE: Mobile2__c
+  CREATE_DATE: Legacy_Created_Date__c
+  SOURCE: Source__c
+  PRE-ASSESSMENT_SOURCE: Pre_assessment_Source__c
+  CORNELLG-APP_TERM_DISPLAY: Admit_Term_Requested__c
+  APPLICANT_STATUS: Field_Admission_Decision__c
+  MJR_PROGRAM_NAME: Admit_Program_Requested__c
+  # OFFER_PROGRAM: Admit_Program_Offered__c
+  APPLICATION_STATUS: Application_Status__c
+  CORNELLG-GENDER: Gender__c
+  CORNELLG-ETHNIC: Race_Ethnicity__c
+  CORNELLG-HISPANIC_YN: Hispanic__c
+  CORN_CITIZEN_COUNTRY: Country_of_Citizenship__c
+  DECISION_RESPONSE: Accepting_Offer__c
+
 default_fields: []
 _core:
   default_config_hash: NaOg9vT4ZnAVDsF4QPA7QGaO8pUl60cNwY7MB2Gsa14
