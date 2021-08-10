@@ -17,7 +17,7 @@ mapping:
   CORNELLG-APP_TERM_DISPLAY: Admit_Term_Requested__c
   APPLICANT_STATUS: Field_Admission_Decision__c
   MJR_PROGRAM_NAME: Admit_Program_Requested__c
-  # OFFER_PROGRAM: Admit_Program_Offered__c
+  OFFER_PROGRAM: Admit_Program_Offered__c
   APPLICATION_STATUS: Application_Status__c
   CORNELLG-GENDER: Gender__c
   CORNELLG-ETHNIC: Race_Ethnicity__c
