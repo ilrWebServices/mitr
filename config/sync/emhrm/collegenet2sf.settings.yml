@@ -1,6 +1,6 @@
 sftp:
   connection_name: ilr_collegenet
-  filename_pattern: '/^3004_Graduate_Application___Prospect_\d+\.csv$/'
+  filename_pattern: '/^3004_EMHRM_\d+\.csv$/'
   file_max_age_days: 365
   report_directory: /ILR_CRM_Reports
 mapping:
