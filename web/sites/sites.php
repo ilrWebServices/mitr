@@ -57,6 +57,7 @@
 
 // Add domain mappings here.
 $sites['emhrm.mitr.test'] = 'emhrm';
+$sites['faculty.mitr.test'] = 'faculty';
 
 $platformsh = new \Platformsh\ConfigReader\Config();
 
