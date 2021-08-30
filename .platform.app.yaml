@@ -129,6 +129,11 @@ web:
 # Set the timezone for cron jobs.
 timezone: "America/New_York"
 
+variables:
+  env:
+    # This is used by the ilr-profiles-data-feed cron and script.
+    OUTPUT_DIR: "/app/data/files/default/"
+
 crons:
   # Run Drupal's cron tasks every 30 minutes.
   drupal:
@@ -138,4 +143,9 @@ crons:
     # Run EMHRM CollegeNET importer every day at 7:05 and 12:05.
     spec: '5 7,12 * * *'
     cmd: 'drush -l emhrm collegenet2sf:run'
-
+  ilr-profiles-data-feed:
+    # Run activity insight/ldap profile importer every morning at 8:35.
+    spec: '35 8 * * *'
+    cmd: |
+      cd scripts/ilr-profiles-data-pull/
+      php ./pull_people_data.php
