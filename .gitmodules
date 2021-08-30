@@ -1,4 +1,4 @@
 [submodule "scripts/ilr-profiles-data-pull"]
 	path = scripts/ilr-profiles-data-pull
-	url = git@github.com:ilrWebServices/ilr-profiles-data-pull.git
+	url = https://github.com/ilrWebServices/ilr-profiles-data-pull.git
 	branch = .
