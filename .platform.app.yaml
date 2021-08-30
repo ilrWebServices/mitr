@@ -17,6 +17,8 @@ runtime:
   # Enable the redis extension so Drupal can communicate with the Redis cache.
   extensions:
     - apcu
+    - ldap
+    - xsl
 
 # The size of the persistent disk of the application (in MB).
 disk: 5120
