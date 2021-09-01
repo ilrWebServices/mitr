@@ -1,0 +1,16 @@
+uuid: cc128a96-c4e3-494d-be8d-0a1429be5905
+langcode: en
+status: true
+dependencies:
+  config:
+    - key.key.ecornell_jwt_x509_key
+  module:
+    - salesforce_jwt
+id: ecornell_jwt_oauth
+label: 'eCornell JWT OAuth'
+provider: jwt
+provider_settings:
+  consumer_key: 3MVG99OxTyEMCQ3gMSSUy6PTE2CrksmWxbEuTNoCc_VZ4RsE3PcuVLyUKNSEiy5qGZC8ktgEhelZvtfQuJn.f
+  login_user: ilrapi@ecornell.com
+  login_url: 'https://login.salesforce.com'
+  encrypt_key: ecornell_jwt_x509_key
