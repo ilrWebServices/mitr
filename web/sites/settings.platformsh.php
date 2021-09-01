@@ -99,3 +99,11 @@ foreach ($platformsh->variables() as $name => $value) {
       break;
   }
 }
+
+if ($platformsh->onProduction()) {
+  // Switch the salesforce auth provider for production subsites. Otherwise, use
+  // the default, which should be for dev.
+  if ($platformsh_subsite_id === 'emhrm') {
+    $config['salesforce.settings']['salesforce_auth_provider'] = 'ecornell_jwt_oauth';
+  }
+}
