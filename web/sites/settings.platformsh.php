@@ -100,7 +100,9 @@ foreach ($platformsh->variables() as $name => $value) {
   }
 }
 
-if ($platformsh->onProduction()) {
+// onProduction() currently assumes that the `master` branch exists. We use
+// `main`, hence the extra check.
+if ($platformsh->onProduction() || (isset($platformsh->branch) && $platformsh->branch == 'main')) {
   // Switch the salesforce auth provider for production subsites. Otherwise, use
   // the default, which should be for dev.
   if ($platformsh_subsite_id === 'emhrm') {
