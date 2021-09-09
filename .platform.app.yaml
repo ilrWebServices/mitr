@@ -152,5 +152,7 @@ crons:
     # Run activity insight/ldap profile importer every morning at 8:35.
     spec: '35 8 * * *'
     cmd: |
-      cd scripts/ilr-profiles-data-pull/
-      php ./pull_people_data.php
+      if [ "$PLATFORM_ENVIRONMENT_TYPE" = production ]; then
+        cd scripts/ilr-profiles-data-pull/
+        php ./pull_people_data.php
+      fi
