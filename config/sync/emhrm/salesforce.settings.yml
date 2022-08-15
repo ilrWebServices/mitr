@@ -1,13 +1,15 @@
+_core:
+  default_config_hash: EjFTlHhnxj9PlzBk2nJ7rVdK1MdUy67s4U9n84FuMho
+global_push_limit: null
+pull_max_queue_size: null
+standalone: null
+show_all_objects: null
+use_latest: false
+limit_mapped_object_revisions: null
+salesforce_auth_provider: ecornell_jwt_oauth_dev
+short_term_cache_lifetime: 300
+long_term_cache_lifetime: 86400
 rest_api_version:
   label: 'Summer ''21'
   url: /services/data/v52.0
   version: '52.0'
-use_latest: false
-global_push_limit: null
-pull_max_queue_size: null
-show_all_objects: null
-standalone: null
-limit_mapped_object_revisions: null
-salesforce_auth_provider: ecornell_jwt_oauth_dev
-_core:
-  default_config_hash: EjFTlHhnxj9PlzBk2nJ7rVdK1MdUy67s4U9n84FuMho
