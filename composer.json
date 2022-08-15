@@ -35,11 +35,10 @@
     "require": {
         "composer/installers": "^1.9",
         "cweagans/composer-patches": "^1.7",
-        "drupal/collegenet2sf": "^1",
+        "drupal/collegenet2sf": "^2",
         "drupal/core-composer-scaffold": "^9.2",
         "drupal/core-recommended": "^9.2",
         "drupal/key": "^1.14",
-        "drupal/salesforce": "^4.0",
         "drupal/webhook_logger": "1.x-dev",
         "drush/drush": "^10.5",
         "firebase/php-jwt": "^5.0",
