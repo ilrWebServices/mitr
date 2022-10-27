@@ -10,6 +10,7 @@ module:
   salesforce: 0
   salesforce_jwt: 0
   sftp_client: 0
+  simple_sqlite_vacuum: 0
   sqlite: 0
   system: 0
   toolbar: 0

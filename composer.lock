@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "64f3cbf00603b317aa542778d8dac426",
+    "content-hash": "8e4545ea9f7b6d0e87b075d470725ae5",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -1824,6 +1824,36 @@
             "support": {
                 "source": "https://git.drupalcode.org/project/sftp_client"
             }
+        },
+        {
+            "name": "drupal/simple_sqlite_vacuum",
+            "version": "1.x-dev",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/freethoughtdesign/simple_sqlite_vacuum.git",
+                "reference": "baa36313f3427b6b943de4d26900c4effd26c9fb"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/freethoughtdesign/simple_sqlite_vacuum/zipball/baa36313f3427b6b943de4d26900c4effd26c9fb",
+                "reference": "baa36313f3427b6b943de4d26900c4effd26c9fb",
+                "shasum": ""
+            },
+            "default-branch": true,
+            "type": "drupal-module",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "description": "A simple module that vacuums sqlite database connections daily",
+            "homepage": "https://github.com/freethoughtdesign/sqlite_vacuum",
+            "keywords": [
+                "Drupal"
+            ],
+            "support": {
+                "source": "https://github.com/freethoughtdesign/simple_sqlite_vacuum/tree/1.x",
+                "issues": "https://github.com/freethoughtdesign/simple_sqlite_vacuum/issues"
+            },
+            "time": "2022-10-23T17:21:06+00:00"
         },
         {
             "name": "drupal/webhook_logger",
@@ -7157,6 +7187,7 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
+        "drupal/simple_sqlite_vacuum": 20,
         "drupal/webhook_logger": 20
     },
     "prefer-stable": true,

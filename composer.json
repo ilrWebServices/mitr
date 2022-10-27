@@ -30,6 +30,10 @@
         {
           "type": "vcs",
           "url": "https://github.com/ilrWebServices/webhook_logger.git"
+        },
+        {
+          "type": "vcs",
+          "url": "https://github.com/freethoughtdesign/simple_sqlite_vacuum.git"
         }
     ],
     "require": {
@@ -39,6 +43,7 @@
         "drupal/core-composer-scaffold": "^9.2",
         "drupal/core-recommended": "^9.2",
         "drupal/key": "^1.14",
+        "drupal/simple_sqlite_vacuum": "1.x-dev",
         "drupal/webhook_logger": "1.x-dev",
         "drush/drush": "^10.5",
         "firebase/php-jwt": "^5.0",
