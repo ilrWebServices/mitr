@@ -46,7 +46,7 @@
         "drupal/simple_sqlite_vacuum": "1.x-dev",
         "drupal/webhook_logger": "1.x-dev",
         "drush/drush": "^10.5",
-        "firebase/php-jwt": "^5.0",
+        "firebase/php-jwt": "^6.8",
         "platformsh/config-reader": "^2.4",
         "vlucas/phpdotenv": "5.0"
     },
