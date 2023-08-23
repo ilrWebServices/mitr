@@ -37,7 +37,7 @@
         }
     ],
     "require": {
-        "composer/installers": "^1.9",
+        "composer/installers": "^2.0",
         "cweagans/composer-patches": "^1.7",
         "drupal/collegenet2sf": "^2",
         "drupal/core-composer-scaffold": "^9.2",
