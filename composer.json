@@ -48,7 +48,7 @@
         "drush/drush": "^10.5",
         "firebase/php-jwt": "^6.8",
         "platformsh/config-reader": "^2.4",
-        "vlucas/phpdotenv": "5.0"
+        "vlucas/phpdotenv": "^5.5"
     },
     "conflict": {
         "drupal/drupal": "*"
