@@ -20,9 +20,6 @@ mapping:
   OFFER_PROGRAM: Admit_Program_Offered__c
   APPLICATION_STATUS: Application_Status_ILR__c
   CORNELLG-GENDER: Gender__c
-  CORNELLG-ETHNIC: Race_Ethnicity__c
-  CORNELLG-HISPANIC_YN: Hispanic__c
-  CORN_CITIZEN_COUNTRY: Country_of_Citizenship__c
   DECISION_RESPONSE: Accepting_Offer__c
 default_fields: {  }
 _core:
