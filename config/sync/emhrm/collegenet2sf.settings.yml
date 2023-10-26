@@ -20,6 +20,7 @@ mapping:
   OFFER_PROGRAM: Admit_Program_Offered__c
   APPLICATION_STATUS: Application_Status_ILR__c
   CORNELLG-GENDER: Gender__c
+  CORNELLG-CITIZENSHIP: Citizenship_Status__c
   DECISION_RESPONSE: Accepting_Offer__c
 default_fields: {  }
 _core:
