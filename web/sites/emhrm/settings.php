@@ -41,6 +41,9 @@ $settings['file_public_base_url'] = '/files/' . $subsite_id;
 // Set the file path.
 $settings['file_public_path'] = '../data/files/' . $subsite_id;
 
+// Set the file assets path.
+$settings['file_assets_path'] = '../data/files/assets/' . $subsite_id;
+
 /**
  * Configure sftp servers.
  */
