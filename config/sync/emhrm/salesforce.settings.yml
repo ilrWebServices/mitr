@@ -10,6 +10,6 @@ salesforce_auth_provider: ecornell_jwt_oauth_dev
 short_term_cache_lifetime: 300
 long_term_cache_lifetime: 86400
 rest_api_version:
-  label: 'Summer ''21'
+  label: "Summer '21"
   url: /services/data/v52.0
   version: '52.0'

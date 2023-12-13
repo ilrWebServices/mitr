@@ -7,6 +7,7 @@ module:
   dblog: 0
   key: 0
   path_alias: 0
+  phpass: 0
   salesforce: 0
   salesforce_jwt: 0
   sftp_client: 0

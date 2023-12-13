@@ -21,7 +21,10 @@
     },
     "repositories": [{
             "type": "composer",
-            "url": "https://packages.drupal.org/8"
+            "url": "https://packages.drupal.org/8",
+            "exclude": [
+              "drupal/sftp_client"
+            ]
         },
         {
             "type": "vcs",
@@ -34,18 +37,23 @@
         {
           "type": "vcs",
           "url": "https://github.com/freethoughtdesign/simple_sqlite_vacuum.git"
+        },
+        {
+          "type": "vcs",
+          "url": "https://github.com/ilrWebServices/sftp_client.git"
         }
     ],
     "require": {
         "composer/installers": "^2.0",
         "cweagans/composer-patches": "^1.7",
         "drupal/collegenet2sf": "^2",
-        "drupal/core-composer-scaffold": "^9.2",
-        "drupal/core-recommended": "^9.2",
+        "drupal/core-composer-scaffold": "^10",
+        "drupal/core-recommended": "^10",
         "drupal/key": "^1.14",
+        "drupal/seven": "^1.0",
         "drupal/simple_sqlite_vacuum": "1.x-dev",
-        "drupal/webhook_logger": "1.x-dev",
-        "drush/drush": "^11.0",
+        "drupal/webhook_logger": "^2",
+        "drush/drush": "^12",
         "firebase/php-jwt": "^6.8",
         "platformsh/config-reader": "^2.4",
         "vlucas/phpdotenv": "^5.5"
@@ -84,10 +92,6 @@
             "web/themes/custom/{$name}": ["type:drupal-custom-theme"]
         },
         "composer-exit-on-patch-failure": true,
-        "patches": {
-            "drupal/salesforce": {
-                "Allow RestClient to handle non-JSON data": "https://git.drupalcode.org/project/salesforce/-/merge_requests/23.diff"
-            }
-        }
+        "patches": { }
     }
 }
