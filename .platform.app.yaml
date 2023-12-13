@@ -68,9 +68,7 @@ hooks:
     set -e
     php ./drush/platformsh_generate_drush_yml.php
     cd web
-    drush -y -l emhrm cache-rebuild
-    drush -y -l emhrm updatedb
-    drush -y -l emhrm config-import
+    drush -l emhrm deploy
 
 # The configuration of app when it is exposed to the web.
 web:
