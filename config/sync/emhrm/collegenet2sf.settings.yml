@@ -5,23 +5,35 @@ sftp:
   report_directory: /ILR_CRM_Reports
 mapping:
   CRM_ID: CollegeNET_CRM_ID__c
-  NAME_FIRST: FirstName
-  NAME_LAST: LastName
+  NAME_FIRST: FIRSTNAME
+  NAME_LAST: LASTNAME
   EMAIL: Email
   PHONE: Phone
-  CORNELLG-CELL_PHONE_FULL: MobilePhone
-  CORNELLG-CELL_PHONE: Mobile2__c
+  CORNELLG-CELL_PHONE: MobilePhone
+  CORNELLG-CELL_PHONE_FULL: Mobile2__c
   CREATE_DATE: Legacy_Created_Date__c
   SOURCE: Source__c
   PRE-ASSESSMENT_SOURCE: Pre_assessment_Source__c
+  OFFER_TERM_TEXT: Admit_Term_Offered__c
   CORNELLG-APP_TERM_DISPLAY: Admit_Term_Requested__c
-  APPLICANT_STATUS: Field_Admission_Decision__c
+  APPLICATION_STATUS: Application_Status__c
   MJR_PROGRAM_NAME: Admit_Program_Requested__c
   OFFER_PROGRAM: Admit_Program_Offered__c
-  APPLICATION_STATUS: Application_Status_ILR__c
-  CORNELLG-GENDER: Gender__c
-  CORNELLG-CITIZENSHIP: Citizenship_Status__c
   DECISION_RESPONSE: Accepting_Offer__c
+  CORNELLG-CITIZENSHIP: Citizenship_Status__c
+  APPLICANT_STATUS: Field_Admission_Decision__c
+  DECISION_DATE: Decision_Date__c
+  STATUS: Status
+  CITY: City
+  STATE: State
+  ZIP: PostalCode
+  CORN_COUNTRY: Country
+  COLLEGE_MAJOR/1: College_Major_1__c
+  COLLEGE_MAJOR/2: College_Major_2__c
+  COLLEGE_MAJOR/3: College_Major_3__c
+  COLLEGE_NAME/1: Undergraduate_School_1__c
+  COLLEGE_NAME/2: Undergraduate_School_2__c
+  COLLEGE_NAME/3: Undergraduate_School_3__c
 default_fields: {  }
 _core:
   default_config_hash: NaOg9vT4ZnAVDsF4QPA7QGaO8pUl60cNwY7MB2Gsa14
