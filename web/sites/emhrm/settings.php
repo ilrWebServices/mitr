@@ -1,7 +1,7 @@
 <?php
 /**
  * @file
- * Platform.sh example settings.php file for Drupal 9.
+ * Platform.sh example settings.php file for Drupal 10.
  */
 
  // Get the folder name to configure paths.
