@@ -6,7 +6,7 @@ standalone: null
 show_all_objects: null
 use_latest: false
 limit_mapped_object_revisions: null
-salesforce_auth_provider: ecornell_jwt_oauth_dev
+salesforce_auth_provider: ilr_marketing_jwt_oauth_dev
 short_term_cache_lifetime: 300
 long_term_cache_lifetime: 86400
 rest_api_version:

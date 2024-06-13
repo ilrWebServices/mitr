@@ -52,6 +52,14 @@ $settings['sftp'] = [
   ],
 ];
 
+/**
+ * Salesforce consumer key for sandbox/dev auth provider. This is an env var
+ * because the app consumer key changes every time the sandbox is refreshed.
+ */
+if (!empty(getenv('SALESFORCE_CONSUMER_KEY_DEV'))) {
+  $config['salesforce.salesforce_auth.ilr_marketing_jwt_oauth_dev']['provider_settings']['consumer_key'] = getenv('SALESFORCE_CONSUMER_KEY_DEV');
+}
+
 // Set the slack webhoook URL from an environment variable.
 if (!empty(getenv('SLACK_WEBHOOK_URL'))) {
   $config['webhook_logger.settings']['slack_webhook_url'] = getenv('SLACK_WEBHOOK_URL');
