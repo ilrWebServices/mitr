@@ -104,6 +104,6 @@ if ($platformsh->onProduction() || (isset($platformsh->branch) && $platformsh->b
   // Switch the salesforce auth provider for production subsites. Otherwise, use
   // the default, which should be for dev.
   if ($platformsh_subsite_id === 'emhrm') {
-    $config['salesforce.settings']['salesforce_auth_provider'] = 'ecornell_jwt_oauth';
+    $config['salesforce.settings']['salesforce_auth_provider'] = 'ilr_marketing_jwt_oauth  ';
   }
 }
