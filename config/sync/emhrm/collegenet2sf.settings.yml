@@ -34,6 +34,12 @@ mapping:
   COLLEGE_NAME/1: Undergraduate_School_1__c
   COLLEGE_NAME/2: Undergraduate_School_2__c
   COLLEGE_NAME/3: Undergraduate_School_3__c
-default_fields: {  }
+default_fields:
+  -
+    key: RecordTypeId
+    value: 012PK000001GGOPYA4
+  -
+    key: Company
+    value: 'NONE PROVIDED'
 _core:
   default_config_hash: NaOg9vT4ZnAVDsF4QPA7QGaO8pUl60cNwY7MB2Gsa14
