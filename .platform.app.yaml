@@ -60,6 +60,8 @@ hooks:
   # No services are available but the disk is writeable.
   build: |
       set -e
+      cd scripts/ilr-profiles-data-pull/
+      composer --no-dev --no-ansi --no-interaction install --no-progress --prefer-dist --optimize-autoloader
   # The deploy hook runs after your application has been deployed and started.
   # Code cannot be modified at this point but the database is available.
   # The site is not accepting requests while this script runs so keep it
@@ -154,3 +156,10 @@ crons:
         cd scripts/ilr-profiles-data-pull/
         php ./pull_people_data.php
       fi
+  employee-feed:
+    # Run workday-based employee feed generator every morning at 7:00.
+    spec: '00 7 * * *'
+    cmd: |
+      set -e
+      cd scripts/ilr-profiles-data-pull/
+      php ./build_people_feed.php
