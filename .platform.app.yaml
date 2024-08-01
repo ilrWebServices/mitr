@@ -133,8 +133,8 @@ timezone: "America/New_York"
 
 variables:
   env:
-    # This is used by the ilr-profiles-data-feed cron and script.
-    OUTPUT_DIR: "/app/data/files/default/"
+    # This is used by the ilr-profiles-data-feed cron and scripts.
+    OUTPUT_DIR: "/app/data/files/default"
 
 crons:
   # Run Drupal's cron tasks every 30 minutes.
