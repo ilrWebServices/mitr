@@ -161,5 +161,7 @@ crons:
     spec: '00 7 * * *'
     cmd: |
       set -e
-      cd scripts/ilr-profiles-data-pull/
-      php ./build_people_feed.php
+      if [ "$PLATFORM_ENVIRONMENT_TYPE" = production ]; then
+        cd scripts/ilr-profiles-data-pull/
+        php ./build_people_feed.php
+      fi
