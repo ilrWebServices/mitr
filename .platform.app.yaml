@@ -157,8 +157,8 @@ crons:
         php ./pull_people_data.php
       fi
   employee-feed:
-    # Run workday-based employee feed generator every morning at 7:00.
-    spec: '00 7 * * *'
+    # Run workday-based employee feed generator every 6 hours.
+    spec: '0 */6 * * *'
     cmd: |
       set -e
       if [ "$PLATFORM_ENVIRONMENT_TYPE" = production ]; then
