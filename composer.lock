@@ -2083,12 +2083,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/freethoughtdesign/simple_sqlite_vacuum.git",
-                "reference": "418e417307bc92d3c3e311e23eb84a1eb97394ae"
+                "reference": "0cdac853527bf566dd7b0fe6ec52c54ed52061a5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/freethoughtdesign/simple_sqlite_vacuum/zipball/418e417307bc92d3c3e311e23eb84a1eb97394ae",
-                "reference": "418e417307bc92d3c3e311e23eb84a1eb97394ae",
+                "url": "https://api.github.com/repos/freethoughtdesign/simple_sqlite_vacuum/zipball/0cdac853527bf566dd7b0fe6ec52c54ed52061a5",
+                "reference": "0cdac853527bf566dd7b0fe6ec52c54ed52061a5",
                 "shasum": ""
             },
             "default-branch": true,
@@ -2105,7 +2105,7 @@
                 "source": "https://github.com/freethoughtdesign/simple_sqlite_vacuum/tree/1.x",
                 "issues": "https://github.com/freethoughtdesign/simple_sqlite_vacuum/issues"
             },
-            "time": "2023-08-20T15:11:04+00:00"
+            "time": "2024-11-16T20:18:24+00:00"
         },
         {
             "name": "drupal/typed_data",
