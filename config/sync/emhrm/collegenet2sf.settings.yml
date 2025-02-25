@@ -23,7 +23,7 @@ mapping:
   CORNELLG-CITIZENSHIP: Citizenship_Status__c
   APPLICANT_STATUS: Field_Admission_Decision__c
   DECISION_DATE: Decision_Date__c
-  STATUS: Status
+  STATUS: Prospect_Status__c
   CITY: City
   STATE: State
   ZIP: PostalCode
