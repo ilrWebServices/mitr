@@ -95,6 +95,9 @@
         "patches": { }
     },
     "scripts": {
+      "sync-prod": [
+        "platform scp -e main remote:/app/data/mitr.sqlite ./data"
+      ],
       "sf-dev": [
         "drush sfrvk ecornell_jwt_oauth",
         "drush sfrvk ecornell_jwt_oauth_dev",
