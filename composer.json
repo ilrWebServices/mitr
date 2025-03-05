@@ -95,12 +95,12 @@
         "patches": { }
     },
     "scripts": {
-      "sf-dev-emhrm": [
-        "drush -l emhrm sfrvk ecornell_jwt_oauth",
-        "drush -l emhrm sfrvk ecornell_jwt_oauth_dev",
-        "drush -l emhrm sfrvk ilr_marketing_jwt_oauth",
-        "drush -l emhrm sfrt ilr_marketing_jwt_oauth_dev",
-        "drush -l emhrm sflp"
+      "sf-dev": [
+        "drush sfrvk ecornell_jwt_oauth",
+        "drush sfrvk ecornell_jwt_oauth_dev",
+        "drush sfrvk ilr_marketing_jwt_oauth",
+        "drush sfrt ilr_marketing_jwt_oauth_dev",
+        "drush sflp"
       ]
     }
 }

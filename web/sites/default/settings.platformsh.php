@@ -6,11 +6,12 @@
 
 use Drupal\Core\Installer\InstallerKernel;
 
-if (!isset($platformsh_subsite_id)) {
-  $platformsh_subsite_id = 'database';
-}
-
 $platformsh = new \Platformsh\ConfigReader\Config();
+
+// Set up a config sync directory.
+//
+// This is defined inside the read-only "config" directory, deployed via Git.
+$settings['config_sync_directory'] = '../config/sync';
 
 // Enable verbose error messages on development branches, but not on the production branch.
 // You may add more debug-centric settings here if desired to have them automatically enable
@@ -25,14 +26,13 @@ if (isset($platformsh->branch)) {
   }
 }
 
-// Configure file paths.
 if ($platformsh->inRuntime()) {
   // Configure private and temporary file paths.
   if (!isset($settings['file_private_path'])) {
-    $settings['file_private_path'] = $platformsh->appDir . '/private/' . $platformsh_subsite_id;
+    $settings['file_private_path'] = $platformsh->appDir . '/private';
   }
   if (!isset($settings['file_temp_path'])) {
-    $settings['file_temp_path'] = $platformsh->appDir . '/tmp/' . $platformsh_subsite_id;
+    $settings['file_temp_path'] = $platformsh->appDir . '/tmp';
   }
 
   // Configure the default PhpStorage and Twig template cache directories.
@@ -101,9 +101,7 @@ foreach ($platformsh->variables() as $name => $value) {
 // onProduction() currently assumes that the `master` branch exists. We use
 // `main`, hence the extra check.
 if ($platformsh->onProduction() || (isset($platformsh->branch) && $platformsh->branch == 'main')) {
-  // Switch the salesforce auth provider for production subsites. Otherwise, use
+  // Switch the salesforce auth provider for production sites. Otherwise, use
   // the default, which should be for dev.
-  if ($platformsh_subsite_id === 'emhrm') {
-    $config['salesforce.settings']['salesforce_auth_provider'] = 'ilr_marketing_jwt_oauth';
-  }
+  $config['salesforce.settings']['salesforce_auth_provider'] = 'ilr_marketing_jwt_oauth';
 }

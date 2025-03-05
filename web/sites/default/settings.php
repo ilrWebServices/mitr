@@ -88,7 +88,12 @@
  * ];
  * @endcode
  */
-$databases = [];
+$databases['default']['default'] = [
+  'database' => '../data/mitr.sqlite',
+  'driver' => 'sqlite',
+  'namespace' => 'Drupal\\Core\\Database\\Driver\\sqlite',
+  'prefix' => '',
+];
 
 /**
  * Customizing database settings.
@@ -256,7 +261,7 @@ $databases = [];
  * directory in the public files path. The setting below allows you to set
  * its location.
  */
-# $settings['config_sync_directory'] = '/directory/outside/webroot';
+$settings['config_sync_directory'] = '../config/sync';
 
 /**
  * Settings:
@@ -286,7 +291,8 @@ $databases = [];
  *   $settings['hash_salt'] = file_get_contents('/home/example/salt.txt');
  * @endcode
  */
-$settings['hash_salt'] = 'kzcltWb0IJBaJFkS8Fiv-PAA5hmi1-e8Yi4oeaJEXBbr8aZwod_FKWyRkmxB-pMq8wsXHIenpA';
+// $settings['hash_salt'] = 'kzcltWb0IJBaJFkS8Fiv-PAA5hmi1-e8Yi4oeaJEXBbr8aZwod_FKWyRkmxB-pMq8wsXHIenpA'; // This was here from the start.
+$settings['hash_salt'] = 'Ph9pVgUc_9ApY5oOoxc9-TZerO-Mo7PbesxRsUmfBIpftYydh_KO4X0OUzhV1aKH1budP8JGiw'; // This was set in local settings.
 
 /**
  * Deployment identifier.
@@ -874,6 +880,22 @@ $settings['migrate_node_migrate_type_classic'] = FALSE;
 # $settings['migrate_source_version'] = '';
 # $settings['migrate_file_public_path'] = '';
 # $settings['migrate_file_private_path'] = '';
+
+/**
+ * Configure sftp servers.
+ */
+$settings['sftp'] = [
+  'ilr_collegenet' => [
+    'server' => 'sftp.applyweb.com',
+    'username' => getenv('ILR_COLLEGENET_SFTP_USER'),
+    'password' => getenv('ILR_COLLEGENET_SFTP_PASSWORD'),
+  ],
+];
+
+// Set the slack webhoook URL from an environment variable.
+if (!empty(getenv('SLACK_WEBHOOK_URL'))) {
+  $config['webhook_logger.settings']['slack_webhook_url'] = getenv('SLACK_WEBHOOK_URL');
+}
 
 // Automatic Platform.sh settings.
 if (file_exists($app_root . '/' . $site_path . '/../settings.platformsh.php')) {
