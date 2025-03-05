@@ -1,10 +1,10 @@
 {
-    "name": "ilr/emhrm-connector",
-    "description": "Minimalist Drupal project connecting CollegeNET to Salesforce for EMHRM and eCornell.",
+    "name": "ilr/mitr",
+    "description": "Minimalist project for simple Drupal-related apps.",
     "type": "project",
     "license": "GPL-2.0-or-later",
     "authors": [{
-            "name": "Aaron Froelich",
+            "name": "Aaron Froehlich",
             "email": "aaronf@cornell.edu",
             "role": "Developer"
         },
