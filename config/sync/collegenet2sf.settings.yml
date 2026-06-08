@@ -5,8 +5,8 @@ sftp:
   report_directory: /ILR_CRM_Reports
 mapping:
   CRM_ID: CollegeNET_CRM_ID__c
-  NAME_FIRST: FIRSTNAME
-  NAME_LAST: LASTNAME
+  NAME_FIRST: FirstName
+  NAME_LAST: LastName
   EMAIL: Email
   PHONE: Phone
   CORNELLG-CELL_PHONE: MobilePhone
