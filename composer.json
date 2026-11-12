@@ -47,13 +47,13 @@
         "composer/installers": "^2.0",
         "cweagans/composer-patches": "^1.7",
         "drupal/collegenet2sf": "^2",
-        "drupal/core-composer-scaffold": "^10",
-        "drupal/core-recommended": "^10",
+        "drupal/core-composer-scaffold": "^11",
+        "drupal/core-recommended": "^11",
         "drupal/key": "^1.14",
         "drupal/seven": "^1.0",
         "drupal/simple_sqlite_vacuum": "1.x-dev",
         "drupal/webhook_logger": "^2",
-        "drush/drush": "^12",
+        "drush/drush": "^13",
         "firebase/php-jwt": "^7",
         "platformsh/config-reader": "^2.4",
         "vlucas/phpdotenv": "^5.5"
@@ -68,7 +68,8 @@
         "allow-plugins": {
             "composer/installers": true,
             "cweagans/composer-patches": true,
-            "drupal/core-composer-scaffold": true
+            "drupal/core-composer-scaffold": true,
+            "symfony/runtime": true
         }
     },
     "autoload": {
